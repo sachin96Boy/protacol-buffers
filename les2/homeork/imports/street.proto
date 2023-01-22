@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+import "les2/homework/imports/city.proto";
+
+message Street {
+    string name = 1;
+    City city = 2;
+}
