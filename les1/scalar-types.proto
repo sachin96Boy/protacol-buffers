@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+message Person {
+    int32 age = 1;
+    string first_name = 2;
+    string last_name = 3;
+    bytes small_picture = 4;
+    bool is_profile_verified = 5;
+    float height = 6;
+}
+
+// here the values w attached 1,2,3.. are called tags
+// 1-16 used for 1 byte data that we used more often
+// 16-2048 use 2 bytes we use them for other data
+// google has reserved tags from 1900 - for their interal purposes
+
+
+// to make a "list" or an "array" we use the concept of repeated fields.enum
+// list can take any number (0 or more) of elements you want
+// the oposite of repeated is "singular"
